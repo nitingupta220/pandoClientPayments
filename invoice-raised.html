@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Admin</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fonts/fonts.min.css" rel="stylesheet">
+
+    <!-- Date Picker -->
+    <link href="css/daterangepicker.css" rel="stylesheet">
+
+</head>
+
+<body>
+     <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="images/Group.png" alt="" height="30" width="150"></a>
+                <a href="#" class="navbar-brand initial">A</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid table-data">
+
+        <div class="main side-collapse-container">
+
+            <div class="top_header mynav">
+                <div class="col-lg-12 billing_header">
+                    <div class="col-lg-8 col-md-9 col-sm-8 col-xs-12 ">
+
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 equal_padding">
+                            <p class="right_title">Client Name</p>
+                            <div class="selectholder">
+                                <label>Philips Lighting</label>
+                                <select name="Philips Lighting" id="Philips Lighting">
+                                    <option value="0">Philips Lighting</option>
+                                    <option value="Philips Lighting">Philips Lighting</option>
+                                    <option value="Orient Electrices">Orient Electrices</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 equal_padding">
+                            <div class="data_picker">
+                                <p class="right_title">Date</p>
+                                <input type="text" class="date_style date_picker_section bg_input_image" name="daterange" value="01/01/2017 - 01/31/2017" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 equal_padding">
+                            <p class="right_title">Order Status</p>
+                            <div class="selectholder">
+                                <label>Paid</label>
+                                <select name="Paid" id="Paid">
+                                    <option value="0">Paid</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-sm-4 col-xs-12 no-padding">
+                        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 pull-right search_box">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" aria-describedby="sizing-addon2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+            <div class="table_style table-responsive order_details list_table_section billing_section scroll_page_large_full invoice_raised">
+                <div class="table_section order_details_header_fixed">
+                    <div class="side_padding">
+
+                        <table class="table table-striped billing_table billing_table_spacing ">
+                            <thead class="billing_head">
+                                <tr>
+                                    <th>
+                                        <div class="table_heading">Invoice number</div>
+                                    </th>
+                                    <th>
+                                        <div class="table_heading">Invoice created</div>
+                                    </th>
+                                    <th>
+                                        <div class="table_heading">No. of orders</div>
+                                    </th>
+                                    <th>
+                                        <div class="table_heading">Client</div>
+                                    </th>
+                                    <th>
+                                        <div class="table_heading">LR Number</div>
+                                    </th>
+                                    <th>
+                                        <div class="table_heading right_side_text_np">Debit/Credit Note</div>
+                                    </th>
+                                    <th>
+                                        <div class="table_heading right_side_text">Order Amount</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="billing_body sp_tr">
+
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled ul_nomargin dsp_inline number_view">
+                                            <li>
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" value="checkbox1">
+                                                    <span class="checkbox"></span><a href="invoice-checker.html">57123</a>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                    <td>10 Oct 2017</td>
+                                    <td>1 <span class="right_side popover_style"> <a href="#" rel="popover" data-popover-content="#myPopoverorder" data-placement="bottom" class="popover_test"> + </a></span></td>
+                                    <td>Philips Lighting India Ltd.</td>
+                                    <td>789066
+                                        <span class="right_side popover_style"><a href="#" rel="popover" data-popover-content="#myPopovernumber" data-placement="bottom" class="popover_test"> + 5 </a></span>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text_np">cr. 2,000</div>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text">20,200</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled ul_nomargin dsp_inline number_view">
+                                            <li>
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" value="checkbox1">
+                                                    <span class="checkbox"></span><a href="#">57334</a>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                    <td>10 Oct 2017</td>
+                                    <td>2 <span class="right_side popover_style"> <a href="#" rel="popover" data-popover-content="#myPopoverorder" data-placement="bottom" class="popover_test"> + </a></span></td>
+                                    <td>Philips Lighting India Ltd.</td>
+                                    <td>789066
+                                        <span class="right_side popover_style"><a href="#" rel="popover" data-popover-content="#myPopovernumber" data-placement="bottom" class="popover_test"> + 2 </a></span>
+                                    </td>
+                                    <td class="null">
+                                        <div class="right_side_text_np">
+                                            <div class="minus"></div>
+                                            <div class="minus"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text">4,000</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled ul_nomargin dsp_inline number_view">
+                                            <li>
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" value="checkbox1">
+                                                    <span class="checkbox"></span><a href="#">57256</a>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                    <td>11 Oct 2017</td>
+                                    <td>6 </td>
+                                    <td>Philips Lighting India Ltd.</td>
+                                    <td>789066
+                                        <span class="right_side popover_style"><a href="#" rel="popover" data-popover-content="#myPopovernumber" data-placement="bottom" class="popover_test"> + 3 </a></span>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text_np">dr. 400</div>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text">20,200</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled ul_nomargin dsp_inline number_view">
+                                            <li>
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" value="checkbox1">
+                                                    <span class="checkbox"></span><a href="#">57256</a>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                    <td>11 Oct 2017</td>
+                                    <td>1 <span class="right_side popover_style"> <a href="#" rel="popover" data-popover-content="#myPopoverorder" data-placement="bottom" class="popover_test"> + </a></span></td>
+                                    <td>Philips Lighting India Ltd.</td>
+                                    <td>789066
+                                        <span class="right_side popover_style"><a href="#" rel="popover" data-popover-content="#myPopovernumber" data-placement="bottom" class="popover_test"> + 1 </a></span>
+                                    </td>
+                                    <td class="null">
+                                        <div class="right_side_text_np">
+                                            <div class="minus"></div>
+                                            <div class="minus"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text">dr. 100</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled ul_nomargin dsp_inline number_view">
+                                            <li>
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" value="checkbox1">
+                                                    <span class="checkbox"></span><a href="#">57256</a>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                    <td>12 Oct 2017</td>
+                                    <td>8 </td>
+                                    <td>Philips Lighting India Ltd.</td>
+                                    <td>789066
+                                        <span class="right_side popover_style"><a href="#" rel="popover" data-popover-content="#myPopovernumber" data-placement="bottom" class="popover_test"> + 3 </a></span>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text_np">dr. 100</div>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text">78,200</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled ul_nomargin dsp_inline number_view">
+                                            <li>
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" value="checkbox1">
+                                                    <span class="checkbox"></span><a href="#">57256</a>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                    <td>12 Oct 2017</td>
+                                    <td>7 <span class="right_side popover_style"> <a href="#" rel="popover" data-popover-content="#myPopoverorder" data-placement="bottom" class="popover_test"> + </a></span></td>
+                                    <td>Philips Lighting India Ltd.</td>
+                                    <td>789066
+                                        <span class="right_side popover_style"><a href="#" rel="popover" data-popover-content="#myPopovernumber" data-placement="bottom" class="popover_test"> + 6 </a></span>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text_np">
+                                            <div class="minus_line">dr. 4000</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text">13,900</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled ul_nomargin dsp_inline number_view">
+                                            <li>
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" value="checkbox1">
+                                                    <span class="checkbox"></span><a href="#">57256</a>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                    <td>10 Oct 2017</td>
+                                    <td>1 <span class="right_side popover_style"> <a href="#" rel="popover" data-popover-content="#myPopoverorder" data-placement="bottom" class="popover_test"> + </a></span></td>
+                                    <td>Philips Lighting India Ltd.</td>
+                                    <td>789066
+                                        <span class="right_side popover_style"><a href="#" rel="popover" data-popover-content="#myPopovernumber" data-placement="bottom" class="popover_test"> + 5 </a></span>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text_np">cr. 2,000</div>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text">20,200</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled ul_nomargin dsp_inline number_view">
+                                            <li>
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" value="checkbox1">
+                                                    <span class="checkbox"></span><a href="#">57256</a>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                    <td>10 Oct 2017</td>
+                                    <td>2 <span class="right_side popover_style"> <a href="#" rel="popover" data-popover-content="#myPopoverorder" data-placement="bottom" class="popover_test"> + </a></span></td>
+                                    <td>Philips Lighting India Ltd.</td>
+                                    <td>789066
+                                        <span class="right_side popover_style"><a href="#" rel="popover" data-popover-content="#myPopovernumber" data-placement="bottom" class="popover_test"> + 2 </a></span>
+                                    </td>
+                                    <td class="null">
+                                        <div class="right_side_text_np">
+                                            <div class="minus"></div>
+                                            <div class="minus"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text">4,000</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled ul_nomargin dsp_inline number_view">
+                                            <li>
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" value="checkbox1">
+                                                    <span class="checkbox"></span><a href="#">57256</a>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                    <td>11 Oct 2017</td>
+                                    <td>6 </td>
+                                    <td>Philips Lighting India Ltd.</td>
+                                    <td>789066
+                                        <span class="right_side popover_style"><a href="#" rel="popover" data-popover-content="#myPopovernumber" data-placement="bottom" class="popover_test"> + 3 </a></span>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text_np">dr. 400</div>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text">20,200</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled ul_nomargin dsp_inline number_view">
+                                            <li>
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" value="checkbox1">
+                                                    <span class="checkbox"></span><a href="#">57256</a>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                    <td>11 Oct 2017</td>
+                                    <td>1 <span class="right_side popover_style"> <a href="#" rel="popover" data-popover-content="#myPopoverorder" data-placement="bottom" class="popover_test"> + </a></span></td>
+                                    <td>Philips Lighting India Ltd.</td>
+                                    <td>789066
+                                        <span class="right_side popover_style"><a href="#" rel="popover" data-popover-content="#myPopovernumber" data-placement="bottom" class="popover_test"> + 1 </a></span>
+                                    </td>
+                                    <td class="null">
+                                        <div class="right_side_text_np">
+                                            <div class="minus"></div>
+                                            <div class="minus"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text">dr. 100</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled ul_nomargin dsp_inline number_view">
+                                            <li>
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" value="checkbox1">
+                                                    <span class="checkbox"></span><a href="#">57256</a>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                    <td>12 Oct 2017</td>
+                                    <td>8 </td>
+                                    <td>Philips Lighting India Ltd.</td>
+                                    <td>789066
+                                        <span class="right_side popover_style"><a href="#" rel="popover" data-popover-content="#myPopovernumber" data-placement="bottom" class="popover_test"> + 3 </a></span>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text_np">dr. 100</div>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text">78,200</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled ul_nomargin dsp_inline number_view">
+                                            <li>
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" value="checkbox1">
+                                                    <span class="checkbox"></span><a href="#">57256</a>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                    <td>12 Oct 2017</td>
+                                    <td>7 <span class="right_side popover_style"> <a href="#" rel="popover" data-popover-content="#myPopoverorder" data-placement="bottom" class="popover_test"> + </a></span></td>
+                                    <td>Philips Lighting India Ltd.</td>
+                                    <td>789066
+                                        <span class="right_side popover_style"><a href="#" rel="popover" data-popover-content="#myPopovernumber" data-placement="bottom" class="popover_test"> + 6 </a></span>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text_np">
+                                            <div class="minus_line">dr. 4000</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="right_side_text">13,900</div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="myPopoverorder" class="hide number_popover">
+                <div class="popover_list input_lrnumber">
+                    <ul class="list-unstyled list_popover_content">
+                        <li>
+                            <div class="max_content list_popover_content dsp_inline_div">Orient Electricles</div>
+                            <div class="max_content list_popover_content dsp_inline_div pull-right padding_left">789067</div>
+                        </li>
+
+                        <li>
+                            <div class="max_content list_popover_content dsp_inline_div">Leds World Electricles</div>
+                            <div class="max_content list_popover_content dsp_inline_div pull-right padding_left">789067</div>
+                        </li>
+
+                        <li>
+                            <div class="max_content list_popover_content dsp_inline_div">Mahaveer Electrical</div>
+                            <div class="max_content list_popover_content dsp_inline_div pull-right padding_left">789067</div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div id="myPopovernumber" class="hide number_popover text_number_width">
+                <div class="popover_list input_lrnumber">
+                    <ul class="list-unstyled list_popover_content">
+                        <li>
+                            <div class="max_content list_popover_content dsp_inline_div">Orient Electricles</div>
+                            <div class="max_content list_popover_content dsp_inline_div pull-right padding_left">789067</div>
+                        </li>
+
+                        <li>
+                            <div class="max_content list_popover_content dsp_inline_div">Leds World Electricles</div>
+                            <div class="max_content list_popover_content dsp_inline_div pull-right padding_left">789067</div>
+                        </li>
+
+                        <li>
+                            <div class="max_content list_popover_content dsp_inline_div">Mahaveer Electrical</div>
+                            <div class="max_content list_popover_content dsp_inline_div pull-right padding_left">789067</div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <footer>
+                <div class="col-lg-12 footer">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding btn_style">
+                        <div class="pull-right">
+                            <a href="#">
+                                <button class="btn btn-success" type="button">
+                                    <div class="btn_text">Export</div>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/comman-script.js"></script>
+
+    <!------Date Picker------------->
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+
+</body>
+
+</html>
